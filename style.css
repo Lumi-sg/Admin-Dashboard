@@ -1,0 +1,77 @@
+body {
+	color: rgb(0, 0, 0);
+	margin: 0;
+}
+
+img {
+	height: 2rem;
+	width: 2rem;
+}
+.container-container {
+	display: grid;
+	grid-template-columns: 200px 2fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		"dashboard header header"
+		"dashboard projects announucements"
+		"dashboard projects trending";
+	gap: 5px;
+	height: 100vh;
+	background-color: #202020;
+}
+
+.header-container {
+	grid-area: header;
+	background-color: aqua;
+}
+.dashboard-container {
+	grid-area: dashboard;
+	background-color: blueviolet;
+}
+
+.projects-container {
+	display: grid;
+	grid-area: projects;
+	background-color: brown;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		"card-1 card-2"
+		"card-3 card-4"
+		"card-5 card-6";
+}
+
+.announcements-container {
+	grid-area: announucements;
+	background-color: yellow;
+}
+
+.trending-container {
+	grid-area: trending;
+	background-color: seagreen;
+}
+
+.card-1 {
+	grid-area: card-1;
+	border: 1px solid;
+}
+.card-2 {
+	grid-area: card-2;
+	border: 1px solid;
+}
+.card-3 {
+	grid-area: card-3;
+	border: 1px solid;
+}
+.card-4 {
+	grid-area: card-4;
+	border: 1px solid;
+}
+.card-5 {
+	grid-area: card-5;
+	border: 1px solid;
+}
+.card-6 {
+	grid-area: card-6;
+	border: 1px solid;
+}
