@@ -9,8 +9,8 @@ img {
 }
 .container-container {
 	display: grid;
-	grid-template-columns: 200px 2fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 200px 3fr 1fr;
+	grid-template-rows: 1fr  2fr 1fr;
 	grid-template-areas:
 		"dashboard header header"
 		"dashboard projects announucements"
