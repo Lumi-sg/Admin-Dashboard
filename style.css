@@ -23,6 +23,12 @@ img {
 .header-container {
 	grid-area: header;
 	background-color: aqua;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"topOfHeader topOfHeader"
+		"botOfHeader botOfHeader";
 }
 .dashboard-container {
 	grid-area: dashboard;
@@ -75,3 +81,4 @@ img {
 	grid-area: card-6;
 	border: 1px solid;
 }
+
