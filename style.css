@@ -91,6 +91,7 @@ body {
 .searchStuff > img {
 	height: 5vh;
 	width: 5vh;
+	cursor: pointer;
 }
 
 .topOfHeader .accountStuff {
@@ -128,6 +129,7 @@ body {
 	margin-left: 1vh;
 	font-weight: bold;
 	font-size: 1.5vh;
+	cursor: pointer;
 }
 
 .botOfHeader .profile {
@@ -139,12 +141,56 @@ body {
 
 .projects-container {
 	grid-area: content;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	background-color: rgb(60, 12, 94);
+}
+
+.card {
+	background-color: #202020;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	margin: 0.5rem;
+	border: 1px solid rgb(60, 12, 94);
+}
+
+.card-title {
+	display: flex;
+	justify-content: flex-start;
+	font-size: larger;
+	font-weight: bold;
+	margin: 1rem;
+	text-decoration: underline;
+}
+
+.card-body {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+	font-size: large;
+}
+
+.card-icons {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 4vh;
+	margin-right: 2vh;
+	margin-bottom: 2vh;
+}
+
+.card-icons > img {
+	margin: 0.5vh;
 }
 
 .announcements-container {
 	grid-area: announcements;
+	background-color: #202020;
 }
 
 .trending-container {
 	grid-area: trending;
+	background-color: #202020;
 }
