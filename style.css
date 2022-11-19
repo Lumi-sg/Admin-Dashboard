@@ -16,7 +16,7 @@ body {
 		"dashboard header header header"
 		"dashboard content content announcements"
 		"dashboard content content trending";
-	grid-template-rows: 0.3fr 2fr 2fr;
+	grid-template-rows: 0.3fr 2fr 1fr;
 	grid-template-columns: 1fr 4fr 4fr 4fr;
 }
 
@@ -154,7 +154,6 @@ body {
 	flex-direction: column;
 	color: white;
 	margin: 0.5rem;
-	border: 1px solid rgb(60, 12, 94);
 }
 
 .card-title {
@@ -188,6 +187,29 @@ body {
 .announcements-container {
 	grid-area: announcements;
 	background-color: #202020;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	background-color: rgb(60, 12, 94);
+	border-left: #202020;
+}
+
+.announcement {
+	background-color: #202020;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	margin: 0.5rem;
+}
+.announcement > h5 {
+	font-size: medium;
+}
+.announcement-text {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+	font-size: medium;
 }
 
 .trending-container {
