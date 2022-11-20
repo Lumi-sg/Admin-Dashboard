@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 :root {
 	font-size: 16px;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -16,12 +19,12 @@ body {
 		"dashboard header header header"
 		"dashboard content content announcements"
 		"dashboard content content trending";
-	grid-template-rows: 0.3fr 2fr 1fr;
-	grid-template-columns: 1fr 4fr 4fr 4fr;
+	grid-template-rows: 0.2fr 2fr 1fr;
+	grid-template-columns: 1fr 4fr 4fr 3fr;
 }
 
 .dashboard-container {
-	height: 100vh;
+	height: 100%;
 	grid-area: dashboard;
 	background-color: #202020;
 	font-size: 1.5rem;
@@ -71,6 +74,7 @@ body {
 .topOfHeader {
 	display: grid;
 	grid-template-columns: 4fr 0.5fr 0.5fr;
+	margin-top: 0.5vh;
 }
 .searchStuff {
 	display: flex;
@@ -109,8 +113,7 @@ body {
 	height: 5vh;
 	width: 5vh;
 	border-radius: 50%;
-	padding: 1rem;
-	margin-left: 1vh;
+	margin: 0.5vh 1.5vh 0.5vh 2vh;
 }
 
 .topOfHeader .buttons {
@@ -175,9 +178,10 @@ body {
 .card-icons {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 4vh;
+	margin-top: 7vh;
 	margin-right: 2vh;
 	margin-bottom: 2vh;
+	cursor: pointer;
 }
 
 .card-icons > img {
@@ -191,7 +195,8 @@ body {
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	background-color: rgb(60, 12, 94);
-	border-left: #202020;
+	border-left: #202020 3px solid;
+	border-bottom: #202020 3px solid;
 }
 
 .announcement {
@@ -215,4 +220,44 @@ body {
 .trending-container {
 	grid-area: trending;
 	background-color: #202020;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(60, 12, 94);
+	border-left: #202020 3px solid;
+}
+
+.trend {
+	background-color: #202020;
+	border-radius: 15px;
+	color: white;
+	margin: 0.25rem;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	height: 30%;
+	/* border: 1px solid rgba(255, 255, 255, 0.156); */
+}
+.profile-picture-trend {
+	padding: 0.5vh;
+	margin-right: 0.5rem;
+	align-self: center;
+}
+.profile-picture-trend > img {
+	border-radius: 50%;
+	height: 5vh;
+	width: 5vh;
+	align-self: center;
+}
+
+.username {
+	font-size: large;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+
+.displayname {
+	font-style: oblique;
 }
