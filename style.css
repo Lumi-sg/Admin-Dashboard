@@ -178,9 +178,8 @@ body {
 .card-icons {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 7vh;
+	margin-top: 5vh;
 	margin-right: 2vh;
-	margin-bottom: 2vh;
 	cursor: pointer;
 }
 
